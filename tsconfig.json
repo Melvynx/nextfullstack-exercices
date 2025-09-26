@@ -30,5 +30,11 @@
     ".next/types/**/*.ts",
     "app/exercises/m3-advanced"
   ],
-  "exclude": ["node_modules", "*.config.js", "*.config.ts", "*.config.mjs"]
+  "exclude": [
+    "node_modules",
+    "*.config.js",
+    "*.config.ts",
+    "*.config.mjs",
+    ".next"
+  ]
 }

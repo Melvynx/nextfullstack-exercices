@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { getCurrentExerciseUrl } from "@/lib/current-exercises-url";
 import { AlertCircle, ClipboardList, PlusCircle } from "lucide-react";
 
 export default async function ProjectsPage() {

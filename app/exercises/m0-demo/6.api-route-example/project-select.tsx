@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import {
   Popover,
@@ -19,8 +17,10 @@ const ProjectSchema = z.object({
 
 export function ProjectSelect({
   selectedProjectId,
+  // onProjectChange,
 }: {
   selectedProjectId: string;
+  onProjectChange: (projectId: string) => void;
 }) {
   const id = useId();
   const [open, setOpen] = useState<boolean>(false);
@@ -48,7 +48,7 @@ export function ProjectSelect({
         </Button>
       </PopoverTrigger>
       <PopoverContent variant="destructive" className="w-full">
-        <p className="text-inherit">Bonsoir</p>
+        <p className="text-inherit">TODO</p>
       </PopoverContent>
     </Popover>
   );
